@@ -1021,29 +1021,31 @@ a:hover .media img,
 }
 
 .contact__details {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: var(--gutter);
   margin-top: clamp(5rem, 10vw, 9rem);
   border-top: 1px solid var(--line);
 }
 
+/* One quiet row per contact point: label, large value, small action hint */
 .contact__item {
-  padding-top: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--gutter);
+  align-items: baseline;
+  padding: clamp(2rem, 4vw, 3rem) 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .contact__item .eyebrow {
-  margin-bottom: 0.9rem;
+  grid-column: 1 / span 3;
 }
 
-.contact__item p:not(.eyebrow),
-.contact__item a {
+.contact__value {
+  grid-column: 4 / span 6;
+  justify-self: start;
   font-family: var(--serif);
-  font-size: 1.5rem;
-  line-height: 1.35;
-}
-
-.contact__item a {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  line-height: 1.2;
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0 1px;
   background-position: 0 100%;
@@ -1051,8 +1053,42 @@ a:hover .media img,
   transition: background-size 0.7s var(--ease);
 }
 
-.contact__item a:hover {
+.contact__value:hover {
   background-size: 100% 1px;
+}
+
+/* The whole row is clickable through the value link */
+.contact__value::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.contact__name {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.contact__hint {
+  grid-column: 10 / span 3;
+  justify-self: end;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  transition: color 0.4s var(--ease);
+}
+
+.contact__item:hover .contact__hint {
+  color: var(--anthracite);
 }
 
 /* Footer ------------------------------------------------------------------ */
@@ -1064,6 +1100,34 @@ a:hover .media img,
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--text-soft);
+}
+
+.footer-contact {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Rule inside the gutters, like every other line on the site */
+.footer-contact::after {
+  content: "";
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.footer-contact a {
+  transition: color 0.4s var(--ease);
+}
+
+.footer-contact a:hover {
+  color: var(--anthracite);
 }
 
 .footer-inner {
@@ -1548,8 +1612,22 @@ a:hover .media img,
     padding-top: 0;
   }
 
-  .contact__details {
-    grid-template-columns: 1fr;
+  .contact__item {
+    grid-template-columns: 1fr auto;
+    row-gap: 0.9rem;
+  }
+  .contact__item .eyebrow {
+    grid-column: 1;
+  }
+  .contact__hint {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .contact__value {
+    grid-column: 1 / -1;
+  }
+  .footer-contact {
+    flex-direction: column;
   }
 }
 
