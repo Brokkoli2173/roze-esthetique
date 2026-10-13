@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROZE ESTHÉTIQUE | studio &amp; academy</title>
   <meta name="description" content="ROZE ESTHÉTIQUE – Studio &amp; Academy für dauerhafte Haarentfernung mit Hochleistungslaser, Lash Extensions, Lash Lift, Brow Lift und Brow Styling sowie professionelle Beauty-Schulungen.">
-  <meta name="theme-color" content="#fbf9f6">
-  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/inter-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <script>document.documentElement.classList.add("js");</script>
   <script src="assets/js/main.js" defer></script>
@@ -30,12 +30,12 @@
       </button>
 
       <a class="brand" href="#top" aria-label="ROZE ESTHÉTIQUE – zur Startseite">
-        <span class="brand__name">ROZE</span>
-        <span class="brand__sub">Esthétique</span>
+        <span class="brand__name">ROZE ESTHÉTIQUE</span>
+        <span class="brand__sub">Studio &amp; Academy</span>
       </a>
 
       <div class="header-cta">
-        <a class="btn" href="#kontakt">Termin buchen</a>
+        <a class="btn btn--sm" href="#kontakt">Termin buchen</a>
       </div>
     </div>
   </header>
@@ -56,14 +56,20 @@
     <section class="hero" aria-label="Einleitung">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow reveal">ROZE ESTHÉTIQUE — Studio &amp; Academy</p>
+          <p class="eyebrow reveal">Beauty Studio &amp; Academy</p>
 
-          <h1 class="display hero__title reveal" style="--delay: .1s">
-            <span>Die Kunst</span>
-            <span class="indent">der <em>Details.</em></span>
+          <h1 class="hero__brand reveal" style="--delay: .1s">
+            <span>ROZE</span>
+            <span>ESTHÉTIQUE</span>
           </h1>
 
-          <ul class="hero__disciplines reveal" style="--delay: .25s" aria-label="Schwerpunkte">
+          <span class="hero__rule reveal" style="--delay: .2s" aria-hidden="true"></span>
+
+          <p class="hero__tagline reveal" style="--delay: .25s">
+            Die Kunst der <em>Details</em> — ruhig, präzise und persönlich.
+          </p>
+
+          <ul class="hero__disciplines reveal" style="--delay: .3s" aria-label="Schwerpunkte">
             <li>Laser</li>
             <li>Lashes</li>
             <li>Brows</li>
@@ -77,16 +83,18 @@
         </div>
 
         <div class="hero__visual">
-          <!-- Bild: z. B. ruhige Editorial-Aufnahme / Close-up -->
-          <figure class="media media--tone-1 reveal-media" data-label="Editorial · Close-up" style="--delay: .2s"></figure>
-          <span class="hero__visual-note" aria-hidden="true">Beauty, elevated</span>
+          <span class="hero__niche" aria-hidden="true"></span>
+          <!-- Bild: z. B. Studio-Interior mit Spiegel / warmes Licht -->
+          <figure class="media media--arch media--stone reveal-media" data-label="Studio · Interior" style="--delay: .15s"></figure>
+          <!-- Bild: z. B. Detail – Olivenzweig, Stoff, Travertin -->
+          <figure class="media hero__detail media--sand reveal-media" data-label="Detail" style="--delay: .45s"></figure>
         </div>
       </div>
 
       <div class="container">
         <div class="hero__footer">
           <span>Laser · Lashes · Brows · Academy</span>
-          <a class="scroll-cue" href="#intro">Scroll <span class="scroll-cue__line" aria-hidden="true"></span></a>
+          <a class="scroll-cue" href="#intro">Entdecken <span class="scroll-cue__line" aria-hidden="true"></span></a>
         </div>
       </div>
     </section>
@@ -105,55 +113,63 @@
     <section class="services" id="leistungen" aria-labelledby="leistungen-title">
       <div class="container">
         <header class="section-head">
-          <h2 class="display section-head__title reveal" id="leistungen-title">Leistungen</h2>
-          <div class="section-head__aside reveal" style="--delay: .1s">
-            <p class="eyebrow">Unsere Schwerpunkte</p>
-            <p class="lead">Vier Bereiche, ein Anspruch: höchste Sorgfalt in jeder Behandlung.</p>
+          <div>
+            <p class="eyebrow reveal">Unsere Schwerpunkte</p>
+            <h2 class="section-head__title reveal" id="leistungen-title" style="--delay: .1s">Leistungen</h2>
           </div>
+          <p class="lead section-head__aside reveal" style="--delay: .2s">Vier Bereiche, ein Anspruch: höchste Sorgfalt in jeder Behandlung.</p>
         </header>
 
         <div class="services__grid">
           <!-- später: laser.html -->
           <a class="service" href="#kontakt">
-            <figure class="media media--portrait media--tone-2 reveal-media" data-label="Laser · Behandlung"></figure>
+            <figure class="media media--portrait media--stone reveal-media" data-label="Laser · Behandlung"></figure>
             <div class="service__meta reveal">
               <span class="service__index">01</span>
-              <h3 class="service__title">Laser</h3>
-              <span class="service__more" aria-hidden="true"></span>
-              <p class="service__desc">Dauerhafte Haarentfernung mit medizinischem Hochleistungslaser.</p>
+              <div>
+                <h3 class="service__title">Laser</h3>
+                <p class="service__desc">Dauerhafte Haarentfernung mit medizinischem Hochleistungslaser.</p>
+              </div>
+              <span class="service__arrow" aria-hidden="true"></span>
             </div>
           </a>
 
           <!-- später: lashes.html -->
           <a class="service" href="#kontakt">
-            <figure class="media media--tall media--tone-3 reveal-media" data-label="Lashes · Close-up"></figure>
+            <figure class="media media--tall media--sand reveal-media" data-label="Lashes · Close-up"></figure>
             <div class="service__meta reveal">
               <span class="service__index">02</span>
-              <h3 class="service__title">Lashes</h3>
-              <span class="service__more" aria-hidden="true"></span>
-              <p class="service__desc">Lash Extensions und Lash Lift — für einen offenen, natürlichen Blick.</p>
+              <div>
+                <h3 class="service__title">Lashes</h3>
+                <p class="service__desc">Lash Extensions und Lash Lift — für einen offenen, natürlichen Blick.</p>
+              </div>
+              <span class="service__arrow" aria-hidden="true"></span>
             </div>
           </a>
 
           <!-- später: brows.html -->
           <a class="service" href="#kontakt">
-            <figure class="media media--tall media--tone-1 reveal-media" data-label="Brows · Detail"></figure>
+            <figure class="media media--tall media--linen reveal-media" data-label="Brows · Detail"></figure>
             <div class="service__meta reveal">
               <span class="service__index">03</span>
-              <h3 class="service__title">Brows</h3>
-              <span class="service__more" aria-hidden="true"></span>
-              <p class="service__desc">Brow Lift und Brow Styling, abgestimmt auf deine Gesichtszüge.</p>
+              <div>
+                <h3 class="service__title">Brows</h3>
+                <p class="service__desc">Brow Lift und Brow Styling, abgestimmt auf deine Gesichtszüge.</p>
+              </div>
+              <span class="service__arrow" aria-hidden="true"></span>
             </div>
           </a>
 
           <!-- später: academy.html -->
           <a class="service" href="#academy">
-            <figure class="media media--portrait media--tone-4 reveal-media" data-label="Academy · Hände bei der Arbeit"></figure>
+            <figure class="media media--portrait media--taupe reveal-media" data-label="Academy · Hände bei der Arbeit"></figure>
             <div class="service__meta reveal">
               <span class="service__index">04</span>
-              <h3 class="service__title">Academy</h3>
-              <span class="service__more" aria-hidden="true"></span>
-              <p class="service__desc">Professionelle Beauty-Schulungen für Einstieg und Weiterentwicklung.</p>
+              <div>
+                <h3 class="service__title">Academy</h3>
+                <p class="service__desc">Professionelle Beauty-Schulungen für Einstieg und Weiterentwicklung.</p>
+              </div>
+              <span class="service__arrow" aria-hidden="true"></span>
             </div>
           </a>
         </div>
@@ -165,13 +181,13 @@
       <div class="container">
         <div class="studio__grid">
           <div class="studio__images">
-            <figure class="media media--tall media--tone-2 reveal-media" data-label="Studio · Interior"></figure>
-            <figure class="media media--square media--tone-3 reveal-media" data-label="Studio · Detail" style="--delay: .2s"></figure>
+            <figure class="media media--arch media--stone reveal-media" data-label="Studio · Spiegel &amp; Licht"></figure>
+            <figure class="media media--square media--taupe reveal-media" data-label="Studio · Detail" style="--delay: .2s"></figure>
           </div>
 
           <div class="studio__content">
             <p class="eyebrow reveal">Das Studio</p>
-            <h2 class="display studio__title reveal" id="studio-title" style="--delay: .1s">Ein Raum für <em>Ruhe</em> und Präzision.</h2>
+            <h2 class="studio__title reveal" id="studio-title" style="--delay: .1s">Ein Raum für <em>Ruhe</em> und Präzision.</h2>
             <p class="lead reveal" style="--delay: .2s">
               Bei ROZE nehmen wir uns Zeit — für ein ehrliches Gespräch, eine sorgfältige Beratung und eine Behandlung, die genau zu dir passt. In einer Atmosphäre, in der du ankommen kannst.
             </p>
@@ -188,9 +204,9 @@
         </div>
 
         <div class="studio__strip">
-          <figure class="media media--tone-1 reveal-media" data-label="Studio · Atmosphäre"></figure>
-          <figure class="media media--tone-4 reveal-media" data-label="Detail" style="--delay: .15s"></figure>
-          <figure class="media media--tone-2 reveal-media" data-label="Arbeitsmoment" style="--delay: .3s"></figure>
+          <figure class="media media--linen reveal-media" data-label="Studio · Atmosphäre"></figure>
+          <figure class="media media--wood reveal-media" data-label="Material · Holz" style="--delay: .15s"></figure>
+          <figure class="media media--stone reveal-media" data-label="Arbeitsmoment" style="--delay: .3s"></figure>
         </div>
       </div>
     </section>
@@ -200,30 +216,30 @@
       <div class="container academy__grid">
         <div class="academy__intro">
           <p class="eyebrow reveal">ROZE Academy</p>
-          <h2 class="display academy__title reveal" id="academy-title" style="--delay: .1s">Wissen, das <em>bleibt.</em></h2>
+          <h2 class="academy__title reveal" id="academy-title" style="--delay: .1s">Wissen, das <em>bleibt.</em></h2>
           <p class="lead reveal" style="--delay: .2s">
             ROZE ist nicht nur Studio, sondern auch Academy. In unseren Schulungen geben wir weiter, was uns täglich antreibt: saubere Technik, ein geschultes Auge und den Anspruch an echte Qualität.
           </p>
         </div>
 
         <div class="academy__visual">
-          <figure class="media media--portrait media--tone-dark reveal-media" data-label="Academy · Schulung"></figure>
+          <figure class="media media--portrait media--umber reveal-media" data-label="Academy · Schulung"></figure>
         </div>
 
         <!-- Kursformate: Platzhalter, bitte an das tatsächliche Angebot anpassen -->
         <ol class="courses">
           <li class="course reveal">
-            <span class="course__num">I.</span>
+            <span class="course__num">I</span>
             <h3 class="course__title">Lash Extensions</h3>
             <p class="course__text">Von der Grundtechnik bis zum sicheren Styling — fundiert und praxisnah.</p>
           </li>
           <li class="course reveal" style="--delay: .1s">
-            <span class="course__num">II.</span>
+            <span class="course__num">II</span>
             <h3 class="course__title">Lash &amp; Brow Lift</h3>
             <p class="course__text">Anwendung, Produktkunde und Ergebnisse, die natürlich wirken.</p>
           </li>
           <li class="course reveal" style="--delay: .2s">
-            <span class="course__num">III.</span>
+            <span class="course__num">III</span>
             <h3 class="course__title">Brow Styling</h3>
             <p class="course__text">Formen, Proportionen und Techniken für präzise, harmonische Brauen.</p>
           </li>
@@ -242,7 +258,7 @@
       <div class="container">
         <div class="contact__top">
           <p class="eyebrow reveal">Termin</p>
-          <h2 class="display contact__title reveal" id="kontakt-title" style="--delay: .1s">Zeit für <em>dich.</em></h2>
+          <h2 class="contact__title reveal" id="kontakt-title" style="--delay: .1s">Zeit für <em>dich.</em></h2>
           <p class="lead reveal" style="--delay: .2s">
             Buche deinen Termin oder lass dich vorab persönlich beraten. Wir nehmen uns Zeit für deine Fragen.
           </p>
@@ -277,6 +293,7 @@
       <nav class="footer-links" aria-label="Footer">
         <a href="#">Instagram</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="terminbedingungen.html">Terminbedingungen</a>
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
       </nav>
