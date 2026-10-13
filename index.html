@@ -3,116 +3,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roze Esthétique – Beauty Studio &amp; Academy</title>
-  <meta name="description" content="Roze Esthétique – Beauty Studio &amp; Academy">
-  <style>
-    :root {
-      --rose: #c98a8f;
-      --rose-light: #f7ebec;
-      --text: #3a2e2f;
-      --muted: #7a6a6b;
-      --bg: #fffaf9;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-    header {
-      padding: 1.25rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid var(--rose-light);
-    }
-    header .logo { font-size: 1.5rem; letter-spacing: 0.08em; color: var(--rose); }
-    nav { margin-top: 0.5rem; }
-    nav a {
-      margin: 0 0.75rem;
-      color: var(--muted);
-      text-decoration: none;
-      font-family: system-ui, sans-serif;
-      font-size: 0.9rem;
-    }
-    nav a:hover { color: var(--rose); }
-    .hero {
-      text-align: center;
-      padding: 5rem 1rem;
-      background: var(--rose-light);
-    }
-    .hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: normal; }
-    .hero p { color: var(--muted); margin-top: 0.5rem; font-family: system-ui, sans-serif; }
-    section { max-width: 900px; margin: 0 auto; padding: 4rem 1rem; }
-    h2 { font-weight: normal; color: var(--rose); margin-bottom: 1rem; text-align: center; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border: 1px solid var(--rose-light);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    .card h3 { font-weight: normal; margin-bottom: 0.5rem; }
-    .card p { color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: var(--muted);
-      font-family: system-ui, sans-serif;
-      font-size: 0.85rem;
-      border-top: 1px solid var(--rose-light);
-    }
-  </style>
+  <title>ROZE ESTHÉTIQUE | studio &amp; academy</title>
+  <meta name="description" content="ROZE ESTHÉTIQUE – Studio &amp; Academy für dauerhafte Haarentfernung mit Hochleistungslaser, Lash Extensions, Lash Lift, Brow Lift und Brow Styling sowie professionelle Beauty-Schulungen.">
+  <meta name="theme-color" content="#fbf9f6">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="logo">ROZE ESTHÉTIQUE</div>
-    <nav>
-      <a href="#studio">Studio</a>
-      <a href="#academy">Academy</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+
+  <!-- Header ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#academy">Academy</a>
+        <a href="#studio">Studio</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="brand" href="#top" aria-label="ROZE ESTHÉTIQUE – zur Startseite">
+        <span class="brand__name">ROZE</span>
+        <span class="brand__sub">Esthétique</span>
+      </a>
+
+      <div class="header-cta">
+        <a class="btn" href="#kontakt">Termin buchen</a>
+      </div>
+    </div>
   </header>
 
-  <div class="hero">
-    <h1>Beauty Studio &amp; Academy</h1>
-    <p>Schönheit mit Hingabe und Expertise.</p>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#academy">Academy</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn btn--solid" href="#kontakt">Termin buchen <span class="arrow" aria-hidden="true"></span></a>
   </div>
 
-  <section id="studio">
-    <h2>Studio</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Behandlungen</h3>
-        <p>Platzhalter für Ihre Beauty-Behandlungen.</p>
+  <main id="top">
+
+    <!-- Hero ============================================================ -->
+    <section class="hero" aria-label="Einleitung">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal">ROZE ESTHÉTIQUE — Studio &amp; Academy</p>
+
+          <h1 class="display hero__title reveal" style="--delay: .1s">
+            <span>Die Kunst</span>
+            <span class="indent">der <em>Details.</em></span>
+          </h1>
+
+          <ul class="hero__disciplines reveal" style="--delay: .25s" aria-label="Schwerpunkte">
+            <li>Laser</li>
+            <li>Lashes</li>
+            <li>Brows</li>
+            <li>Academy</li>
+          </ul>
+
+          <div class="hero__actions reveal" style="--delay: .4s">
+            <a class="btn btn--solid" href="#kontakt">Termin buchen <span class="arrow" aria-hidden="true"></span></a>
+            <a class="link-line" href="#leistungen">Leistungen entdecken</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- Bild: z. B. ruhige Editorial-Aufnahme / Close-up -->
+          <figure class="media media--tone-1 reveal-media" data-label="Editorial · Close-up" style="--delay: .2s"></figure>
+          <span class="hero__visual-note" aria-hidden="true">Beauty, elevated</span>
+        </div>
       </div>
-      <div class="card">
-        <h3>Pflege</h3>
-        <p>Platzhalter für Pflege- und Wellness-Angebote.</p>
+
+      <div class="container">
+        <div class="hero__footer">
+          <span>Laser · Lashes · Brows · Academy</span>
+          <a class="scroll-cue" href="#intro">Scroll <span class="scroll-cue__line" aria-hidden="true"></span></a>
+        </div>
       </div>
+    </section>
+
+    <!-- Statement ======================================================= -->
+    <section class="statement" id="intro" aria-label="Über ROZE">
+      <div class="container statement__inner">
+        <p class="eyebrow reveal">Philosophie</p>
+        <p class="statement__text reveal" style="--delay: .1s">
+          ROZE steht für präzise Behandlungen, ruhige Räume und Ergebnisse, die <em>natürlich</em> wirken — mit Zeit für jedes Detail und dem Anspruch, Schönheit nicht zu verändern, sondern zu unterstreichen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Leistungen ====================================================== -->
+    <section class="services" id="leistungen" aria-labelledby="leistungen-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="display section-head__title reveal" id="leistungen-title">Leistungen</h2>
+          <div class="section-head__aside reveal" style="--delay: .1s">
+            <p class="eyebrow">Unsere Schwerpunkte</p>
+            <p class="lead">Vier Bereiche, ein Anspruch: höchste Sorgfalt in jeder Behandlung.</p>
+          </div>
+        </header>
+
+        <div class="services__grid">
+          <!-- später: laser.html -->
+          <a class="service" href="#kontakt">
+            <figure class="media media--portrait media--tone-2 reveal-media" data-label="Laser · Behandlung"></figure>
+            <div class="service__meta reveal">
+              <span class="service__index">01</span>
+              <h3 class="service__title">Laser</h3>
+              <span class="service__more" aria-hidden="true"></span>
+              <p class="service__desc">Dauerhafte Haarentfernung mit medizinischem Hochleistungslaser.</p>
+            </div>
+          </a>
+
+          <!-- später: lashes.html -->
+          <a class="service" href="#kontakt">
+            <figure class="media media--tall media--tone-3 reveal-media" data-label="Lashes · Close-up"></figure>
+            <div class="service__meta reveal">
+              <span class="service__index">02</span>
+              <h3 class="service__title">Lashes</h3>
+              <span class="service__more" aria-hidden="true"></span>
+              <p class="service__desc">Lash Extensions und Lash Lift — für einen offenen, natürlichen Blick.</p>
+            </div>
+          </a>
+
+          <!-- später: brows.html -->
+          <a class="service" href="#kontakt">
+            <figure class="media media--tall media--tone-1 reveal-media" data-label="Brows · Detail"></figure>
+            <div class="service__meta reveal">
+              <span class="service__index">03</span>
+              <h3 class="service__title">Brows</h3>
+              <span class="service__more" aria-hidden="true"></span>
+              <p class="service__desc">Brow Lift und Brow Styling, abgestimmt auf deine Gesichtszüge.</p>
+            </div>
+          </a>
+
+          <!-- später: academy.html -->
+          <a class="service" href="#academy">
+            <figure class="media media--portrait media--tone-4 reveal-media" data-label="Academy · Hände bei der Arbeit"></figure>
+            <div class="service__meta reveal">
+              <span class="service__index">04</span>
+              <h3 class="service__title">Academy</h3>
+              <span class="service__more" aria-hidden="true"></span>
+              <p class="service__desc">Professionelle Beauty-Schulungen für Einstieg und Weiterentwicklung.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio ========================================================== -->
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="container">
+        <div class="studio__grid">
+          <div class="studio__images">
+            <figure class="media media--tall media--tone-2 reveal-media" data-label="Studio · Interior"></figure>
+            <figure class="media media--square media--tone-3 reveal-media" data-label="Studio · Detail" style="--delay: .2s"></figure>
+          </div>
+
+          <div class="studio__content">
+            <p class="eyebrow reveal">Das Studio</p>
+            <h2 class="display studio__title reveal" id="studio-title" style="--delay: .1s">Ein Raum für <em>Ruhe</em> und Präzision.</h2>
+            <p class="lead reveal" style="--delay: .2s">
+              Bei ROZE nehmen wir uns Zeit — für ein ehrliches Gespräch, eine sorgfältige Beratung und eine Behandlung, die genau zu dir passt. In einer Atmosphäre, in der du ankommen kannst.
+            </p>
+
+            <ul class="values reveal" style="--delay: .3s">
+              <li><span class="values__name">Persönlich</span><span class="values__note">Beratung auf Augenhöhe</span></li>
+              <li><span class="values__name">Präzise</span><span class="values__note">Arbeit bis ins Detail</span></li>
+              <li><span class="values__name">Hochwertig</span><span class="values__note">Ausgewählte Produkte &amp; Technik</span></li>
+              <li><span class="values__name">Professionell</span><span class="values__note">Fundiertes Fachwissen</span></li>
+            </ul>
+
+            <a class="link-line reveal" href="#kontakt">Termin vereinbaren</a>
+          </div>
+        </div>
+
+        <div class="studio__strip">
+          <figure class="media media--tone-1 reveal-media" data-label="Studio · Atmosphäre"></figure>
+          <figure class="media media--tone-4 reveal-media" data-label="Detail" style="--delay: .15s"></figure>
+          <figure class="media media--tone-2 reveal-media" data-label="Arbeitsmoment" style="--delay: .3s"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academy ========================================================= -->
+    <section class="academy" id="academy" aria-labelledby="academy-title">
+      <div class="container academy__grid">
+        <div class="academy__intro">
+          <p class="eyebrow reveal">ROZE Academy</p>
+          <h2 class="display academy__title reveal" id="academy-title" style="--delay: .1s">Wissen, das <em>bleibt.</em></h2>
+          <p class="lead reveal" style="--delay: .2s">
+            ROZE ist nicht nur Studio, sondern auch Academy. In unseren Schulungen geben wir weiter, was uns täglich antreibt: saubere Technik, ein geschultes Auge und den Anspruch an echte Qualität.
+          </p>
+        </div>
+
+        <div class="academy__visual">
+          <figure class="media media--portrait media--tone-dark reveal-media" data-label="Academy · Schulung"></figure>
+        </div>
+
+        <!-- Kursformate: Platzhalter, bitte an das tatsächliche Angebot anpassen -->
+        <ol class="courses">
+          <li class="course reveal">
+            <span class="course__num">I.</span>
+            <h3 class="course__title">Lash Extensions</h3>
+            <p class="course__text">Von der Grundtechnik bis zum sicheren Styling — fundiert und praxisnah.</p>
+          </li>
+          <li class="course reveal" style="--delay: .1s">
+            <span class="course__num">II.</span>
+            <h3 class="course__title">Lash &amp; Brow Lift</h3>
+            <p class="course__text">Anwendung, Produktkunde und Ergebnisse, die natürlich wirken.</p>
+          </li>
+          <li class="course reveal" style="--delay: .2s">
+            <span class="course__num">III.</span>
+            <h3 class="course__title">Brow Styling</h3>
+            <p class="course__text">Formen, Proportionen und Techniken für präzise, harmonische Brauen.</p>
+          </li>
+        </ol>
+
+        <div class="academy__cta reveal">
+          <p>Praxisnah. Persönlich. Fundiert.</p>
+          <!-- später: academy.html -->
+          <a class="btn btn--light" href="#kontakt">Schulungen entdecken <span class="arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt / Termin ================================================ -->
+    <section class="contact" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container">
+        <div class="contact__top">
+          <p class="eyebrow reveal">Termin</p>
+          <h2 class="display contact__title reveal" id="kontakt-title" style="--delay: .1s">Zeit für <em>dich.</em></h2>
+          <p class="lead reveal" style="--delay: .2s">
+            Buche deinen Termin oder lass dich vorab persönlich beraten. Wir nehmen uns Zeit für deine Fragen.
+          </p>
+          <!-- TODO: Link zum Buchungssystem eintragen -->
+          <a class="btn btn--solid reveal" href="#kontakt" style="--delay: .3s">Termin buchen <span class="arrow" aria-hidden="true"></span></a>
+        </div>
+
+        <!-- TODO: echte Kontaktdaten eintragen -->
+        <div class="contact__details">
+          <div class="contact__item reveal">
+            <p class="eyebrow">Studio</p>
+            <p>Adresse folgt</p>
+          </div>
+          <div class="contact__item reveal" style="--delay: .1s">
+            <p class="eyebrow">Kontakt</p>
+            <p>E-Mail &amp; Telefon folgen</p>
+          </div>
+          <div class="contact__item reveal" style="--delay: .2s">
+            <p class="eyebrow">Instagram</p>
+            <a href="#">@roze</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">ROZE ESTHÉTIQUE</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#">Instagram</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </nav>
+      <span>&copy; <span id="year">2026</span></span>
     </div>
-  </section>
-
-  <section id="academy">
-    <h2>Academy</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Schulungen</h3>
-        <p>Platzhalter für Kurse und Weiterbildungen.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p style="text-align:center; font-family: system-ui, sans-serif;">Adresse · Telefon · E-Mail</p>
-  </section>
-
-  <footer>
-    &copy; 2026 Roze Esthétique
   </footer>
+
 </body>
 </html>
