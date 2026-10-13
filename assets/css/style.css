@@ -327,6 +327,17 @@ ol {
   color: rgba(251, 249, 246, 0.45);
 }
 
+/* A photo inside the placeholder tone, with a quiet passe-partout around it */
+.media--framed {
+  padding: clamp(1.25rem, 3vw, 2.75rem);
+}
+
+.media__frame {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
 .media:has(img)::after {
   display: none;
 }
