@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roze Esthétique – Beauty Studio &amp; Academy</title>
+  <meta name="description" content="Roze Esthétique – Beauty Studio &amp; Academy">
+  <style>
+    :root {
+      --rose: #c98a8f;
+      --rose-light: #f7ebec;
+      --text: #3a2e2f;
+      --muted: #7a6a6b;
+      --bg: #fffaf9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      padding: 1.25rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--rose-light);
+    }
+    header .logo { font-size: 1.5rem; letter-spacing: 0.08em; color: var(--rose); }
+    nav { margin-top: 0.5rem; }
+    nav a {
+      margin: 0 0.75rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--rose); }
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: var(--rose-light);
+    }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: normal; }
+    .hero p { color: var(--muted); margin-top: 0.5rem; font-family: system-ui, sans-serif; }
+    section { max-width: 900px; margin: 0 auto; padding: 4rem 1rem; }
+    h2 { font-weight: normal; color: var(--rose); margin-bottom: 1rem; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--rose-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .card h3 { font-weight: normal; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--rose-light);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ROZE ESTHÉTIQUE</div>
+    <nav>
+      <a href="#studio">Studio</a>
+      <a href="#academy">Academy</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Beauty Studio &amp; Academy</h1>
+    <p>Schönheit mit Hingabe und Expertise.</p>
+  </div>
+
+  <section id="studio">
+    <h2>Studio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Behandlungen</h3>
+        <p>Platzhalter für Ihre Beauty-Behandlungen.</p>
+      </div>
+      <div class="card">
+        <h3>Pflege</h3>
+        <p>Platzhalter für Pflege- und Wellness-Angebote.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="academy">
+    <h2>Academy</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Schulungen</h3>
+        <p>Platzhalter für Kurse und Weiterbildungen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p style="text-align:center; font-family: system-ui, sans-serif;">Adresse · Telefon · E-Mail</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Roze Esthétique
+  </footer>
+</body>
+</html>
