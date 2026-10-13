@@ -1284,16 +1284,16 @@ a:hover .media img,
 .price-jump {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem 2.75rem;
-  padding-top: 1.75rem;
-  margin-top: clamp(3rem, 6vw, 5rem);
+  gap: 1.25rem clamp(2.5rem, 5vw, 4.5rem);
+  padding-top: 2rem;
+  margin-top: clamp(3.5rem, 7vw, 6rem);
   border-top: 1px solid var(--line);
 }
 
 .price-jump a {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.75rem;
+  gap: 1rem;
   font-size: 0.6875rem;
   font-weight: 400;
   letter-spacing: 0.28em;
@@ -1320,14 +1320,14 @@ a:hover .media img,
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--gutter);
-  row-gap: 2.5rem;
-  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  row-gap: 3.5rem;
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
   border-top: 1px solid var(--line);
   scroll-margin-top: 5rem;
 }
 
 .price-cat + .price-cat {
-  margin-top: clamp(2rem, 5vw, 4.5rem);
+  margin-top: clamp(3rem, 6vw, 5rem);
 }
 
 .price-cat__head {
@@ -1339,19 +1339,19 @@ a:hover .media img,
 }
 
 .price-cat__num {
-  padding-top: 0.75rem;
+  padding-top: 1.1rem;
   font-size: 0.6875rem;
   letter-spacing: 0.2em;
   color: var(--olive);
 }
 
 .price-cat__title {
-  font-size: clamp(2.25rem, 3.6vw, 3.25rem);
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
   line-height: 1.1;
 }
 
 .price-cat__sub {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 0.6875rem;
   font-weight: 400;
   letter-spacing: 0.28em;
@@ -1360,7 +1360,7 @@ a:hover .media img,
 }
 
 .price-cat__intro {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   font-size: 0.96875rem;
   color: var(--text-muted);
   max-width: 24em;
@@ -1371,11 +1371,11 @@ a:hover .media img,
 }
 
 .price-group + .price-group {
-  margin-top: clamp(3rem, 5vw, 4rem);
+  margin-top: clamp(3.5rem, 6vw, 5rem);
 }
 
 .price-group__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-family: var(--sans);
   font-size: 0.6875rem;
   font-weight: 400;
@@ -1389,8 +1389,8 @@ a:hover .media img,
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1.5rem;
-  padding: 1rem 0;
+  gap: 2rem;
+  padding: 1.15rem 0;
   border-bottom: 1px solid var(--line);
 }
 
